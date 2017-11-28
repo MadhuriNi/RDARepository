@@ -30,6 +30,7 @@ public class creditInfo {
 		if(en2==true)
 		{
 			logger.info("Credit CD/Direct DR is enabled");
+			logger.info("Added for git");
 		}
 		else
 		{
