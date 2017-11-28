@@ -1,0 +1,16 @@
+
+Browser=chrome
+
+FirefoxDriverPath=webdriver.gecko.driver
+FirefoxDriver=C:\\geckodriver-v0.18.0-win64\\geckodriver.exe
+
+ChromeDriverPath=webdriver.chrome.driver
+ChromeDriver=C:\\chromedriver_win32\\chromedriver.exe
+
+IEDriverPath=webdriver.ie.driver
+IEDriver=C:\\IEDriverServer_Win32_3.7.0\\IEDriverServer.exe
+
+URL=https://devsso.secure.fedex.com/rda/
+
+select_sql=Select JOB_ID,DEVICE,TEST_ID,TRKNG_NBR from RDA_TEST
+insert_sql=insert into RDA_TEST_WRITE (JOB_ID,DEVICE,TEST_ID,TRKNG_NBR,REPORT_TYPE,WORDING,ACTUAL,INVNBR) VALUES (?,?,?,?,?,?,?,?)
