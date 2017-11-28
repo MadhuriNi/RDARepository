@@ -16,6 +16,8 @@ public class Main {
 	{
 		System.out.println("Hello happiee sales peeps !!!");
 		System.out.println("This app shows sales data");
+		
+		System.out.println("-------Configuring in git hub--------");
 	}
 
 }
