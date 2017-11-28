@@ -1,5 +1,5 @@
 
-Browser=chrome
+Browser=firefox
 
 FirefoxDriverPath=webdriver.gecko.driver
 FirefoxDriver=C:\\geckodriver-v0.18.0-win64\\geckodriver.exe

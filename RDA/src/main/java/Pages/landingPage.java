@@ -57,7 +57,7 @@ public class landingPage {
 		}
 		//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
-		if(Browser.equalsIgnoreCase("chrome"))
+	/*	if(Browser.equalsIgnoreCase("chrome"))
 		{
 			String val=trackingNo;
 		
@@ -66,10 +66,12 @@ public class landingPage {
 			        char c = val.charAt(i);
 			        String s = new StringBuilder().append(c).toString();
 			        driver.findElement(tracking_text).sendKeys(s);
-			 }
+			        
+			   }
+			 }*/
 		driver.findElement(search).click();		
 		
 	
-	}
+
 }
 }
