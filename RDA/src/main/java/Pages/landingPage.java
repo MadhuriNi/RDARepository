@@ -35,6 +35,8 @@ public class landingPage {
 	//By tracking_text=By.xpath(".//*[@id='trackingNumberForm:trkNbrTxt']");
 	By search=By.xpath(".//*[@id='trackingNumberForm:searchBtn']");
 	
+	
+	
 	public void tracking_info(String trackingNo)
 	{
 		logged log=new logged();
@@ -44,6 +46,7 @@ public class landingPage {
 		prop=rc.read();
 		
 		driver.navigate().refresh();
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
 		driver.findElement(tracking_id).click();
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
@@ -57,7 +60,7 @@ public class landingPage {
 		}
 		//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
-	/*	if(Browser.equalsIgnoreCase("chrome"))
+		if(Browser.equalsIgnoreCase("chrome"))
 		{
 			String val=trackingNo;
 		
@@ -68,7 +71,7 @@ public class landingPage {
 			        driver.findElement(tracking_text).sendKeys(s);
 			        
 			   }
-			 }*/
+			 }
 		driver.findElement(search).click();		
 		
 	
